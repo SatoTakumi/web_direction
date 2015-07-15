@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.navbar {
+	background: #4d1900;
+}
+.navbar-brand {
+  padding: 0 15px;
+}
+.navbar-brand>img {
+  width: auto;
+  height: 100%;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+	transition: all 0.3s ease;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	background: rgba(255,255,255,0.3);
+	color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: rgba(255,255,255,0.3);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
