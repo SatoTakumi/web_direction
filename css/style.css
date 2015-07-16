@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+body {
+	padding-top: 50px;
+	color: #ddd;
+}
+.img-responsive-center {
+	margin: 0 auto;
+}
+.width-90 {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .navbar {
 	background: #4d1900;
 }
@@ -11,12 +23,12 @@
   height: 100%;
 }
 .navbar-default .navbar-nav>li>a {
-  color: #fff;
+  color: #ddd;
 	transition: all 0.3s ease;
 }
 .navbar-default .navbar-nav>li>a:hover {
 	background: rgba(255,255,255,0.3);
-	color: #fff;
+  color: #ddd;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background: rgba(255,255,255,0.3);
@@ -24,3 +36,9 @@
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+
+#welcome {
+	background: url(../img/welcome_bg.jpg);
+	background-size: cover;
+}
+
