@@ -4,12 +4,9 @@ body {
 	padding-top: 50px;
 	color: #ddd;
 }
-.img-responsive-center {
-	margin: 0 auto;
-}
-.width-90 {
-	width: 90%;
-	margin: 0 auto;
+
+.initialism-more {
+	font-size: 75%;
 }
 
 .navbar {
@@ -22,14 +19,64 @@ body {
   width: auto;
   height: 100%;
 }
+
+
+.navbar-default .navbar-nav li.nav_01 {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 100px;
+	background: url(../img/nav_menu.png) no-repeat center center;
+	background-size: 85%;
+}
+.navbar-default .navbar-nav li.nav_01:hover {
+	background: url(../img/nav_menu_hover.png) no-repeat center center;
+	background-size: 85%;
+}
+.navbar-default .navbar-nav li.nav_02 {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 100px;
+	background: url(../img/nav_access.png) no-repeat center center;
+	background-size: 85%;
+}
+.navbar-default .navbar-nav li.nav_02:hover {
+	background: url(../img/nav_access_hover.png) no-repeat center center;
+	background-size: 85%;
+}
+.navbar-default .navbar-nav li.nav_03 {
+	width: 240px;
+}
+.navbar-default .navbar-nav li.nav_03 img {
+	margin-top: 7px;
+	width: 80%;
+}
+.navbar-default .navbar-nav li.nav_03 p {
+  margin: 4px 0 5px;
+}
+.navbar-default .navbar-nav li.nav_04 {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 200px;
+	background: url(../img/reserve_btn_pc.png) no-repeat center center;
+	background-size: 85%;
+}
+.navbar-default .navbar-nav li.nav_04:hover {
+	background: url(../img/reserve_btn_pc_hover.png) no-repeat center center;
+	background-size: 85%;
+}
+
+
 .navbar-default .navbar-nav>li>a {
   color: #ddd;
 	transition: all 0.3s ease;
-}
+}/*
 .navbar-default .navbar-nav>li>a:hover {
 	background: rgba(255,255,255,0.3);
   color: #ddd;
-}
+}*/
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background: rgba(255,255,255,0.3);
 }
@@ -38,17 +85,32 @@ body {
 }
 
 #welcome {
+	padding-bottom: 1em;
 	background: url(../img/bg_top.jpg);
 	background-size: cover;
+}
+#welcome a {
+	color: inherit;
+	text-decoration: underline;
+}
+#welcome .facebook {
+	width: 110%;
+	margin-left: -5%;
+	padding: 1em 1em 5px;
+	border: 1px solid #fff100;
+	border-radius: 0.7em;
+}
+#welcome .facebook p {
+  text-transform: none;
 }
 #menu {
 	background: #1c1c1c;
 }
 #access {
+	padding-bottom: 1em;
 	background: url(../img/bg_access.jpg);
 	background-size: cover;
 }
-
 footer {
 	padding: 1em 0;
 	background: #4d1900;
