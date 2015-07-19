@@ -10,6 +10,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<link href="css/style.css" rel="stylesheet">
+	
+	<script>// 動かない
+	$(function() {
+		$(window).hashchange(function(){
+			var pos = $("a[name='" + location.hash.substr(1) + "']").offset().top;
+			// $('html, body').animate({ scrollTop: pos - 40 }, 0); // does not jump well on page load on safari
+			// $('html, body').animate({ scrollTop: pos - 40 }, 1); // works, but have to wait 1ms
+			window.scrollTo(0, pos - 50); // worked on safari, chrome, firefox well
+		});
+		// trigger the event on page load.
+		if (location.hash) { $(window).hashchange(); }
+	});
+	</script>
+
+
+
 </head>
 <body>
 		
@@ -111,7 +127,9 @@
 				<p class="initialism">JR横浜線、小田急線　町田駅から15分<br>テキストテキスト</p>
 			</div>
 			<div class="col-xs-12 col-sm-5">
-				<img src="img/pasta.jpg" alt="パスタ" class="img-responsive">
+				<div class="ggmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.5306967754905!2d139.44332919999997!3d35.55066959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018feac6fa115b9%3A0xc6b8194201f2567e!2z44CSMTk0LTAwMjEg5p2x5Lqs6YO955S655Sw5biC5Lit55S677yS5LiB55uu77yZ4oiS77yR77yZ!5e0!3m2!1sja!2sjp!4v1437263451493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</div>

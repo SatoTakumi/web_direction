@@ -8,6 +8,12 @@ body {
 .initialism-more {
 	font-size: 75%;
 }
+@media (min-width:768px){
+	.initialism {
+		font-size: 100%;
+	}
+}
+
 
 .navbar {
 	background: #4d1900;
@@ -85,7 +91,7 @@ body {
 }
 
 #welcome {
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	background: url(../img/bg_top.jpg);
 	background-size: cover;
 }
@@ -100,6 +106,13 @@ body {
 	border: 1px solid #fff100;
 	border-radius: 0.7em;
 }
+@media (min-width:768px){
+	#welcome .facebook {
+		width: 100%;
+		margin-left: 0%;
+		padding: 1em 1.5em 5px;
+	}
+}
 #welcome .facebook p {
   text-transform: none;
 }
@@ -107,11 +120,28 @@ body {
 	background: #1c1c1c;
 }
 #access {
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 	background: url(../img/bg_access.jpg);
 	background-size: cover;
 }
+.ggmap {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+} 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 footer {
-	padding: 1em 0;
+	padding: 1.5em 0;
 	background: #4d1900;
 }
