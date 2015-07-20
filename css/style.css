@@ -119,11 +119,19 @@ body {
 #menu {
 	background: #1c1c1c;
 }
+#menu .container .row div {
+	margin-bottom: 2em;
+}
+
 #access {
 	padding-bottom: 2em;
 	background: url(../img/bg_access.jpg);
 	background-size: cover;
 }
+#access .container .row div {
+	margin-bottom: 2em;
+}
+
 .ggmap {
 	position: relative;
 	padding-bottom: 56.25%;
