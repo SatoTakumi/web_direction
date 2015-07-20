@@ -11,16 +11,22 @@
 
 	<link href="css/style.css" rel="stylesheet">
 	
-	<script>// 動かない
-	$(function() {
-		$(window).hashchange(function(){
-			var pos = $("a[name='" + location.hash.substr(1) + "']").offset().top;
-			// $('html, body').animate({ scrollTop: pos - 40 }, 0); // does not jump well on page load on safari
-			// $('html, body').animate({ scrollTop: pos - 40 }, 1); // works, but have to wait 1ms
-			window.scrollTo(0, pos - 50); // worked on safari, chrome, firefox well
-		});
-		// trigger the event on page load.
-		if (location.hash) { $(window).hashchange(); }
+	<script>
+	$(function(){
+    $('a[href^=#]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        console.log(target);
+        $("html, body").animate({scrollTop:position-50}, speed, "swing");
+        var scrollTargetId = target.attr("id");
+        return false;
+        setTimeout(function(){
+            location.hash = scrollTargetId;
+            return false;
+        },500);
+    });
 	});
 	</script>
 
