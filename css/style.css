@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
 body {
 	padding-top: 50px;
 	color: #ddd;
@@ -108,14 +112,20 @@ body {
 }
 #welcome .facebook-pc {
 	padding-top: 30px;
+	text-align: center;
 }
 #welcome .facebook-pc .fb-page {
 	margin: 0 auto;
 }
 @media (min-width:768px){
+	#welcome h1 img,
+	#welcome p img {
+		margin: 0 auto;
+	}
 	#welcome .facebook {
+		max-width: 520px;
 		width: 100%;
-		margin-left: 0%;
+		margin: 0 auto;
 		padding: 1em 1.5em 5px;
 	}
 }
@@ -157,6 +167,7 @@ body {
 
 #facebook {
 	background: #1c1c1c;
+	text-align: center;
 }
 #facebook .fb-page {
 	margin: 0 auto;
